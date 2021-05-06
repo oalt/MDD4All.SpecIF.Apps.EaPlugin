@@ -1,0 +1,98 @@
+name: EA-Plugin Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    env:
+      SOLUTION_NAME: MDD4All.SpecIF.Apps.EaPlugin
+
+    steps:
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+
+    - name: Get version form file
+      uses: pCYSl5EDgo/cat@master
+      id: fileVersion
+      with: 
+        path: src/version.txt
+
+    - name: Set version as environment variable
+      env:
+        FILE_VERSION: ${{steps.fileVersion.outputs.text}}
+      run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $env:GITHUB_ENV
+
+    - name: Echo version number
+      run: echo $env:VERSION
+
+    - name: Update Assembly info versions
+      uses: Amadevus/pwsh-script@v2
+      id: script
+      with:
+        script: |
+            function Update-SourceVersion
+            {
+                Param ([string]$Version)
+                $NewVersion = 'AssemblyVersion("' + $Version + '")';
+                Write-output $NewVersion
+                $NewFileVersion = 'AssemblyFileVersion("' + $Version + '")';
+                foreach ($o in $input) 
+                {
+                    Write-output $o.FullName
+                    $TmpFile = $o.FullName + ".tmp"
+                    get-content $o.FullName | 
+                    %{$_ -replace 'AssemblyVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', $NewVersion } |
+                    %{$_ -replace 'AssemblyFileVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', $NewFileVersion }  > $TmpFile
+
+                    move-item $TmpFile $o.FullName -force
+                }
+            }
+            Write-output 'Modifiing AssemblyInfos.'
+            foreach ($file in "AssemblyInfo.cs", "AssemblyInfo.vb" ) 
+            {
+                get-childitem -recurse |? {$_.Name -eq $file} | Update-SourceVersion $env:VERSION;
+            }
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
+
+    - name: Restore dependencies
+      run: nuget restore ./src/${{env.SOLUTION_NAME}}.sln
+
+    - name: Build entire solution
+      run: msbuild /p:Configuration=Release /p:Version=${{env.VERSION}} ./src/${{env.SOLUTION_NAME}}.sln
+
+    - name: Copy DLLs
+      uses: canastro/copy-file-action@master
+      with:
+        source: "./src/${{env.SOLUTION_NAME}}/bin/Release/*.dll"
+        target: "./Output/" 
+
+    - name: Copy .config files
+      uses: canastro/copy-file-action@master
+      with:
+        source: "./src/${{env.SOLUTION_NAME}}/bin/Release/*.config"
+        target: "./Output/"
+
+    - name: Upload artifact(s)
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{env.SOLUTION_NAME}}.${{env.VERSION}}
+        path: ./Output/*.*
+      

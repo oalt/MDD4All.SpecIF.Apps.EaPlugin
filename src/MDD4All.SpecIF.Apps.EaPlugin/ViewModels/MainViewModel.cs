@@ -1,7 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MDD4All.SpecIF.Apps.EaPlugin.Views;
-using MDD4All.SpecIF.DataIntegrator.EA;
 using MDD4All.SpecIF.DataModels;
 using MDD4All.SpecIF.DataProvider.Contracts;
 using MDD4All.SpecIF.DataProvider.File;
@@ -19,6 +18,7 @@ using MDD4All.Configuration.Views;
 using NLog;
 using MDD4All.SpecIF.DataProvider.Jira;
 using System.Threading.Tasks;
+using MDD4All.SpecIF.DataIntegrator.EA;
 
 namespace MDD4All.SpecIF.Apps.EaPlugin.ViewModels
 {
