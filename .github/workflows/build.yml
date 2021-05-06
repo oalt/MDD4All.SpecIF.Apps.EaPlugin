@@ -80,8 +80,8 @@ jobs:
 
     - name: Copy results
       run: |
-        xcopy "./src/${{env.SOLUTION_NAME}}/bin/Release/*.dll" ./Output/
-        xcopy "./src/${{env.SOLUTION_NAME}}/bin/Release/*.config" ./Output/
+        xcopy ".\src\${{env.SOLUTION_NAME}}\bin\Release\*.dll" .\Output\
+        xcopy ".\src\${{env.SOLUTION_NAME}}\bin\Release\*.config" .\Output\
 
     - name: Upload artifact(s)
       uses: actions/upload-artifact@v2
