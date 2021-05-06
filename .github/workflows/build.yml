@@ -78,17 +78,10 @@ jobs:
     - name: Build entire solution
       run: msbuild /p:Configuration=Release /p:Version=${{env.VERSION}} ./src/${{env.SOLUTION_NAME}}.sln
 
-    - name: Copy DLLs
-      uses: canastro/copy-file-action@master
-      with:
-        source: "./src/${{env.SOLUTION_NAME}}/bin/Release/*.dll"
-        target: "./Output/" 
-
-    - name: Copy .config files
-      uses: canastro/copy-file-action@master
-      with:
-        source: "./src/${{env.SOLUTION_NAME}}/bin/Release/*.config"
-        target: "./Output/"
+    - name: Copy results
+      run: |
+        xcopy "./src/${{env.SOLUTION_NAME}}/bin/Release/*.dll" ./Output/
+        xcopy "./src/${{env.SOLUTION_NAME}}/bin/Release/*.config" ./Output/
 
     - name: Upload artifact(s)
       uses: actions/upload-artifact@v2
