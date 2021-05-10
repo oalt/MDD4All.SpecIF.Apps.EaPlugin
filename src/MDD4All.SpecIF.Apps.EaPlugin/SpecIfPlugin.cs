@@ -48,25 +48,33 @@ namespace MDD4All.SpecIF.Apps.EaPlugin
 
         public string EA_Connect(EAAPI.Repository repository)
         {
-            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
-
-            SimpleIoc.Default.Register<IConfigurationReaderWriter<SpecIfPluginConfiguration>, FileConfigurationReaderWriter<SpecIfPluginConfiguration>>();
-
-            IConfigurationReaderWriter<SpecIfPluginConfiguration> configurationReaderWriter = SimpleIoc.Default.GetInstance<IConfigurationReaderWriter<SpecIfPluginConfiguration>>();
-
-            if (configurationReaderWriter != null)
+            try
             {
-                _configuration = configurationReaderWriter.GetConfiguration();
+                ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
-                if(_configuration == null)
+                SimpleIoc.Default.Register<IConfigurationReaderWriter<SpecIfPluginConfiguration>, FileConfigurationReaderWriter<SpecIfPluginConfiguration>>();
+
+                IConfigurationReaderWriter<SpecIfPluginConfiguration> configurationReaderWriter = SimpleIoc.Default.GetInstance<IConfigurationReaderWriter<SpecIfPluginConfiguration>>();
+
+                if (configurationReaderWriter != null)
                 {
-                    _configuration = new SpecIfPluginConfiguration();
-                    configurationReaderWriter.StoreConfiguration(_configuration);
-                }
-            }
+                    _configuration = configurationReaderWriter.GetConfiguration();
 
-            _mainViewModel = new MainViewModel(repository);
+                    if (_configuration == null)
+                    {
+                        _configuration = new SpecIfPluginConfiguration();
+                        configurationReaderWriter.StoreConfiguration(_configuration);
+                    }
+                }
+
+                _mainViewModel = new MainViewModel(repository);
+
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.ToString());
+            }
 
             return "";
         }
