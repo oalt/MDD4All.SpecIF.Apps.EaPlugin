@@ -63,24 +63,32 @@ namespace MDD4All.SpecIF.Apps.EaPlugin.ViewModels
 
         private void InitializeDataProviders()
         {
-            SpecIfPluginConfiguration configuration = _configurationReaderWriter.GetConfiguration();
+            try
+            {
+                SpecIfPluginConfiguration configuration = _configurationReaderWriter.GetConfiguration();
 
-            _metadataReader = new SpecIfFileMetadataReader(configuration.SpecIfMetadataDirectory);
+                _metadataReader = new SpecIfFileMetadataReader(configuration.SpecIfMetadataDirectory);
 
-            _specIfDataReader = new SpecIfJiraDataReader(configuration.JiraURL,
-                                                         configuration.JiraUserName,
-                                                         configuration.JiraApiKey,
-                                                         _metadataReader);
+                _specIfDataReader = new SpecIfJiraDataReader(configuration.JiraURL,
+                                                             configuration.JiraUserName,
+                                                             configuration.JiraApiKey,
+                                                             _metadataReader);
 
-            _requirementMasterDataWriter = new SpecIfJiraDataWriter(configuration.JiraURL,
-                                                                    configuration.JiraUserName,
-                                                                    configuration.JiraApiKey,
-                                                                    _metadataReader,
-                                                                    _specIfDataReader);
+                _requirementMasterDataWriter = new SpecIfJiraDataWriter(configuration.JiraURL,
+                                                                        configuration.JiraUserName,
+                                                                        configuration.JiraApiKey,
+                                                                        _metadataReader,
+                                                                        _specIfDataReader);
 
-            _projectIntegrator = new ProjectIntegrator(_repository,
-                                                       _metadataReader,
-                                                       _specIfDataReader);
+                _projectIntegrator = new ProjectIntegrator(_repository,
+                                                           _metadataReader,
+                                                           _specIfDataReader);
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show("Error initializing the data providers\r\n" + exception.StackTrace, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logger.Error(exception);
+            }
         }
 
         public string Version
