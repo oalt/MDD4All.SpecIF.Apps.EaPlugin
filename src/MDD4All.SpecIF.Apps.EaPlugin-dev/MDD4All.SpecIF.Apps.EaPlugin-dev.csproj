@@ -201,6 +201,9 @@
     <Compile Include="..\MDD4All.SpecIF.Apps.EaPlugin\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="..\MDD4All.SpecIF.Apps.EaPlugin\SpecIfPlugin.cs">
+      <Link>SpecIfPlugin.cs</Link>
+    </Compile>
     <Compile Include="..\MDD4All.SpecIF.Apps.EaPlugin\ViewModels\MainViewModel.cs">
       <Link>ViewModels\MainViewModel.cs</Link>
     </Compile>
