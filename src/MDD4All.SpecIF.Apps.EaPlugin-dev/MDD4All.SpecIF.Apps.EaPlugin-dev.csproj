@@ -83,9 +83,6 @@
     <Reference Include="MDD4All.EnterpriseArchitect.Manipulations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.Manipulations.3.0.3.275\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
     </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.SvgGenerator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\SvgGeneration\src\MDD4All.EnterpriseArchitect.SvgGenerator\bin\Debug\netstandard2.0\MDD4All.EnterpriseArchitect.SvgGenerator.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -255,17 +252,13 @@
       <Project>{7d05d418-dc7e-4625-af6d-d9a81c02657d}</Project>
       <Name>MDD4All.SpecIF.DataIntegrator.EA-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels.DiagramInterchange\src\MDD4All.SpecIF.DataModels.DiagramInterchange\MDD4All.SpecIF.DataModels.DiagramInterchange.csproj">
-      <Project>{2f82ad30-00be-467e-bb6e-edd1be27d84e}</Project>
-      <Name>MDD4All.SpecIF.DataModels.DiagramInterchange</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels.Manipulation\src\MDD4All.SpecIF.DataModels.Manipulation\MDD4All.SpecIF.DataModels.Manipulation-dev.csproj">
       <Project>{77efc2a2-5cec-4286-abb4-a9488fc3a7ce}</Project>
       <Name>MDD4All.SpecIF.DataModels.Manipulation-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels\src\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels.csproj">
-      <Project>{c33e488b-dafe-4ff6-a62c-e090425d84f2}</Project>
-      <Name>MDD4All.SpecIF.DataModels</Name>
+    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels\src\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels-dev.csproj">
+      <Project>{5db115ae-d506-4074-9155-f6b161a13651}</Project>
+      <Name>MDD4All.SpecIF.DataModels-dev</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.Contracts\src\MDD4All.SpecIF.DataProvider.Contracts\MDD4All.SpecIF.DataProvider.Contracts-dev.csproj">
       <Project>{95d8feb4-5455-4104-b2a8-0b9487a489cd}</Project>
@@ -282,6 +275,10 @@
     <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.Jira\src\MDD4All.SpecIF.DataProvider.Jira\MDD4All.SpecIF.DataProvider.Jira-dev.csproj">
       <Project>{c918091e-16b0-4c93-b6ff-5bc7ee79a899}</Project>
       <Name>MDD4All.SpecIF.DataProvider.Jira-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SvgGeneration\src\MDD4All.EnterpriseArchitect.SvgGenerator\MDD4All.EnterpriseArchitect.SvgGenerator-dev.csproj">
+      <Project>{9b7504d5-5466-4244-87d7-2db618e05bc0}</Project>
+      <Name>MDD4All.EnterpriseArchitect.SvgGenerator-dev</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
