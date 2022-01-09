@@ -11,7 +11,7 @@ jobs:
 
     runs-on: windows-latest
     env:
-      SOLUTION_NAME: MDD4All.SpecIF.Apps.EaPlugin-dev
+      SOLUTION_NAME: MDD4All.SpecIF.Apps.EaPlugin
 
     steps:
     - name: Checkout repository and submodules
@@ -74,19 +74,20 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Restore dependencies
-      run: nuget restore ./src/${{env.SOLUTION_NAME}}.sln
+      run: nuget restore ./src/${{env.SOLUTION_NAME}}-dev.sln
 
     - name: Build entire solution
-      run: msbuild /p:Configuration=Release /p:Version=${{env.VERSION}} ./src/${{env.SOLUTION_NAME}}.sln
+      run: msbuild /p:Configuration=Release /p:Version=${{env.VERSION}} ./src/${{env.SOLUTION_NAME}}-dev.sln
 
     - name: Copy results
       run: |
-        xcopy ".\src\${{env.SOLUTION_NAME}}\bin\Release\*.dll" .\Output\
-        xcopy ".\src\${{env.SOLUTION_NAME}}\bin\Release\*.config" .\Output\
+        xcopy ".\src\${{env.SOLUTION_NAME}}-dev\bin\Release\*.dll" .\Output\${{env.SOLUTION_NAME}}_${{env.VERSION}}\
+        xcopy ".\src\${{env.SOLUTION_NAME}}-dev\bin\Release\*.config" .\Output\${{env.SOLUTION_NAME}}_${{env.VERSION}}\
+        xcopy ".\src\${{env.SOLUTION_NAME}}\_Registry\RegisterAddin.reg" .\Output\${{env.SOLUTION_NAME}}_${{env.VERSION}}\
 
     - name: Upload artifact(s)
       uses: actions/upload-artifact@v2
       with:
-        name: ${{env.SOLUTION_NAME}}.${{env.VERSION}}
-        path: ./Output/*.*
+        name: ${{env.SOLUTION_NAME}}_${{env.VERSION}}
+        path: ./Output/**/*.*
       
