@@ -23,11 +23,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-        uses: Amadevus/pwsh-script@v2
-        id: date-version
-        with:
-          script: |
-              ([datetime]::now).tostring("yyyy.MM.dd")
+
+    - name: Set version number from date using PS
+      uses: Amadevus/pwsh-script@v2
+      id: date-version
+      with:
+        script: |
+            ([datetime]::now).tostring("yyyy.MM.dd")
 
     - name: Set version variable from date and build number
       env: 
