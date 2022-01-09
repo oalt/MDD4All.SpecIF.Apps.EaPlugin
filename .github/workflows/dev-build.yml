@@ -34,7 +34,7 @@ jobs:
     - name: Set version variable from date and build number
       env: 
         DATE_VERSION: ${{steps.date-version.outputs.result}}
-      run: echo ("VERSION=" + $env:DATE_VESRION + "." + $env:GITHUB_RUN_NUMBER) >> $env:GITHUB_ENV
+      run: echo ("VERSION=" + $env:DATE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $env:GITHUB_ENV
 
     - name: Echo version number
       run: echo $env:VERSION
