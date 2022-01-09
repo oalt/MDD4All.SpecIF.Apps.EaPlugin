@@ -47,141 +47,135 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\DnsClient.1.4.0\lib\net45\DnsClient.dll</HintPath>
+      <HintPath>..\packages\DnsClient.1.4.0\lib\net45\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=0ffbc31322e9d308, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <HintPath>..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <HintPath>..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.11.30.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\HtmlAgilityPack.1.11.30\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\packages\HtmlAgilityPack.1.11.30\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Interop.EA">
-      <HintPath>..\..\..\libs\Interop.EA.dll</HintPath>
+      <HintPath>..\libs\Interop.EA.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="MDD4All.EAFacade.DataAccess.Cached, Version=2.2.1.260, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EAFacade.DataAccess.Cached.2.2.1.260\lib\netstandard2.0\MDD4All.EAFacade.DataAccess.Cached.dll</HintPath>
+      <HintPath>..\packages\MDD4All.EAFacade.DataAccess.Cached.2.2.1.260\lib\netstandard2.0\MDD4All.EAFacade.DataAccess.Cached.dll</HintPath>
     </Reference>
     <Reference Include="MDD4All.EAFacade.DataModels.Contracts, Version=2.1.1.257, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EAFacade.DataModels.Contracts.2.1.1.257\lib\netstandard2.0\MDD4All.EAFacade.DataModels.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.DataModels, Version=2.0.0.140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.DataModels.2.0.0.140\lib\netstandard2.0\MDD4All.EnterpriseArchitect.DataModels.dll</HintPath>
-    </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.DataModels.Contracts, Version=2.0.0.139, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.DataModels.Contracts.2.0.0.139\lib\netstandard2.0\MDD4All.EnterpriseArchitect.DataModels.Contracts.dll</HintPath>
+      <HintPath>..\packages\MDD4All.EAFacade.DataModels.Contracts.2.1.1.257\lib\netstandard2.0\MDD4All.EAFacade.DataModels.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="MDD4All.EnterpriseArchitect.Logging, Version=2.0.1.3, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.Logging.2.0.1.3\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Logging.dll</HintPath>
+      <HintPath>..\packages\MDD4All.EnterpriseArchitect.Logging.2.0.1.3\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Logging.dll</HintPath>
     </Reference>
     <Reference Include="MDD4All.EnterpriseArchitect.Manipulations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.Manipulations.3.0.3.275\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
+      <HintPath>..\packages\MDD4All.EnterpriseArchitect.Manipulations.3.0.3.275\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.705.50, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.705.50, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.705.50, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson, Version=2.12.2.0, Culture=neutral, PublicKeyToken=15b1115599983c50, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MongoDB.Bson.signed.2.12.2\lib\net452\MongoDB.Bson.dll</HintPath>
+      <HintPath>..\packages\MongoDB.Bson.signed.2.12.2\lib\net452\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\NLog.4.5.11\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\packages\NLog.4.5.11\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="ReverseMarkdown, Version=3.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ReverseMarkdown.3.19.0\lib\net46\ReverseMarkdown.dll</HintPath>
+      <HintPath>..\packages\ReverseMarkdown.3.19.0\lib\net46\ReverseMarkdown.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
+      <HintPath>..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+      <HintPath>..\packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\packages\MvvmLightLibsStd10.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -224,61 +218,65 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MDD4All.Configuration\src\MDD4All.Configuration.Views\MDD4All.Configuration.Views.csproj">
+    <ProjectReference Include="..\fmc4seSvgGenerator\src\MDD4All.EnterpriseArchitect.SvgGenerator\MDD4All.EnterpriseArchitect.SvgGenerator.csproj">
+      <Project>{f0ed3246-ff2d-45c0-a7e1-027e034003c8}</Project>
+      <Name>MDD4All.EnterpriseArchitect.SvgGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDD4All.Configuration\src\MDD4All.Configuration.Views\MDD4All.Configuration.Views.csproj">
       <Project>{49d188e4-da77-408d-a618-b4467cd3c4bd}</Project>
       <Name>MDD4All.Configuration.Views</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.Configuration\src\MDD4All.Configuration\MDD4All.Configuration.csproj">
-      <Project>{2f1e85ae-67c5-410a-8569-d9d00e403dda}</Project>
+    <ProjectReference Include="..\MDD4All.Configuration\src\MDD4All.Configuration\MDD4All.Configuration.csproj">
+      <Project>{4157cccf-0562-438e-bd1e-5f02562eb88e}</Project>
       <Name>MDD4All.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.Jira.DataModels\src\MDD4All.Jira.DataModels\MDD4All.Jira.DataModels.csproj">
-      <Project>{ec71a733-6915-4173-b593-425c541eff6b}</Project>
-      <Name>MDD4All.Jira.DataModels</Name>
+    <ProjectReference Include="..\MDD4All.Jira.DataAccess\src\MDD4All.Jira.DataAccess\MDD4All.Jira.DataAccess-dev.csproj">
+      <Project>{21891887-0a73-4bc6-afb9-7a2d918d0580}</Project>
+      <Name>MDD4All.Jira.DataAccess-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataAccess.Jira\src\MDD4All.SpecIF.DataAccess.Jira\MDD4All.SpecIF.DataAccess.Jira-dev.csproj">
-      <Project>{0fb7ed59-7102-4716-bfd1-4b28e9e88a60}</Project>
+    <ProjectReference Include="..\MDD4All.Jira.DataModels\src\MDD4All.Jira.DataModels\MDD4All.Jira.DataModels-dev.csproj">
+      <Project>{094cad2b-65c2-4235-bdf1-00212b55007e}</Project>
+      <Name>MDD4All.Jira.DataModels-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataAccess.Jira\src\MDD4All.SpecIF.DataAccess.Jira\MDD4All.SpecIF.DataAccess.Jira-dev.csproj">
+      <Project>{dad6cfd7-3454-4955-9163-de0a19eb5946}</Project>
       <Name>MDD4All.SpecIF.DataAccess.Jira-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataFactory\src\MDD4All.SpecIF.DataFactory\MDD4All.SpecIF.DataFactory-dev.csproj">
-      <Project>{44ba1179-6575-4aa5-9ceb-db54af718ca5}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataFactory\src\MDD4All.SpecIF.DataFactory\MDD4All.SpecIF.DataFactory-dev.csproj">
+      <Project>{a51bcd6a-0f74-4e52-9fc4-31d05fc04f38}</Project>
       <Name>MDD4All.SpecIF.DataFactory-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataIntegrator.Contracts\src\MDD4All.SpecIF.DataIntegrator.Contracts\MDD4All.SpecIF.DataIntegrator.Contracts-dev.csproj">
-      <Project>{9f65edfe-840a-4fb1-baed-1205cd6bc4bb}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataIntegrator.Contracts\src\MDD4All.SpecIF.DataIntegrator.Contracts\MDD4All.SpecIF.DataIntegrator.Contracts-dev.csproj">
+      <Project>{d7d9a500-521e-4f39-8c9a-9e0447c9a42b}</Project>
       <Name>MDD4All.SpecIF.DataIntegrator.Contracts-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataIntegrator.EA\src\MDD4All.SpecIF.DataIntegrator.EA\MDD4All.SpecIF.DataIntegrator.EA-dev.csproj">
-      <Project>{7d05d418-dc7e-4625-af6d-d9a81c02657d}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataIntegrator.EA\src\MDD4All.SpecIF.DataIntegrator.EA\MDD4All.SpecIF.DataIntegrator.EA-dev.csproj">
+      <Project>{256eec16-d1c0-4427-8a27-7502e042dea0}</Project>
       <Name>MDD4All.SpecIF.DataIntegrator.EA-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels.Manipulation\src\MDD4All.SpecIF.DataModels.Manipulation\MDD4All.SpecIF.DataModels.Manipulation-dev.csproj">
-      <Project>{77efc2a2-5cec-4286-abb4-a9488fc3a7ce}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataModels.Manipulation\src\MDD4All.SpecIF.DataModels.Manipulation\MDD4All.SpecIF.DataModels.Manipulation-dev.csproj">
+      <Project>{57b3395a-8bfe-4d32-88b5-7be3c685ae90}</Project>
       <Name>MDD4All.SpecIF.DataModels.Manipulation-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels\src\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels-dev.csproj">
-      <Project>{5db115ae-d506-4074-9155-f6b161a13651}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataModels\src\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels-dev.csproj">
+      <Project>{5ee9e03b-4b21-481f-ac18-9ca35f6fb277}</Project>
       <Name>MDD4All.SpecIF.DataModels-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.Contracts\src\MDD4All.SpecIF.DataProvider.Contracts\MDD4All.SpecIF.DataProvider.Contracts-dev.csproj">
-      <Project>{95d8feb4-5455-4104-b2a8-0b9487a489cd}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataProvider.Contracts\src\MDD4All.SpecIF.DataProvider.Contracts\MDD4All.SpecIF.DataProvider.Contracts-dev.csproj">
+      <Project>{d1deacc5-adf5-4c03-9094-5fdaa83ac286}</Project>
       <Name>MDD4All.SpecIF.DataProvider.Contracts-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.EA\src\MDD4All.SpecIF.DataProvider.EA\MDD4All.SpecIF.DataProvider.EA-dev.csproj">
-      <Project>{73d5d8d9-3fcc-462a-982f-be44f5499044}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataProvider.EA\src\MDD4All.SpecIF.DataProvider.EA\MDD4All.SpecIF.DataProvider.EA-dev.csproj">
+      <Project>{0f398e9d-dfec-42be-996e-6704562fccb7}</Project>
       <Name>MDD4All.SpecIF.DataProvider.EA-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.File\src\MDD4All.SpecIF.DataProvider.File\MDD4All.SpecIF.DataProvider.File-dev.csproj">
-      <Project>{6e28a28c-d8d3-4870-98cf-4a3a03f6973c}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataProvider.File\src\MDD4All.SpecIF.DataProvider.File\MDD4All.SpecIF.DataProvider.File-dev.csproj">
+      <Project>{a936f477-b5d8-4a30-9bb8-61e3e0f21454}</Project>
       <Name>MDD4All.SpecIF.DataProvider.File-dev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.Jira\src\MDD4All.SpecIF.DataProvider.Jira\MDD4All.SpecIF.DataProvider.Jira-dev.csproj">
-      <Project>{c918091e-16b0-4c93-b6ff-5bc7ee79a899}</Project>
+    <ProjectReference Include="..\MDD4All.SpecIF.DataProvider.Jira\src\MDD4All.SpecIF.DataProvider.Jira\MDD4All.SpecIF.DataProvider.Jira-dev.csproj">
+      <Project>{e6f30b8e-2831-4bec-9b6f-931e045873b9}</Project>
       <Name>MDD4All.SpecIF.DataProvider.Jira-dev</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\SvgGeneration\src\MDD4All.EnterpriseArchitect.SvgGenerator\MDD4All.EnterpriseArchitect.SvgGenerator-dev.csproj">
-      <Project>{9b7504d5-5466-4244-87d7-2db618e05bc0}</Project>
-      <Name>MDD4All.EnterpriseArchitect.SvgGenerator-dev</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -293,9 +291,9 @@
     <PropertyGroup>
       <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets'))" />
-    <Error Condition="!Exists('..\..\..\packages\StrongNamer.0.2.5\build\StrongNamer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StrongNamer.0.2.5\build\StrongNamer.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets'))" />
+    <Error Condition="!Exists('..\packages\StrongNamer.0.2.5\build\StrongNamer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StrongNamer.0.2.5\build\StrongNamer.targets'))" />
   </Target>
-  <Import Project="..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets')" />
-  <Import Project="..\..\..\packages\StrongNamer.0.2.5\build\StrongNamer.targets" Condition="Exists('..\packages\StrongNamer.0.2.5\build\StrongNamer.targets')" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.705.50\build\Microsoft.Web.WebView2.targets')" />
+  <Import Project="..\packages\StrongNamer.0.2.5\build\StrongNamer.targets" Condition="Exists('..\packages\StrongNamer.0.2.5\build\StrongNamer.targets')" />
 </Project>
