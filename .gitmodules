@@ -7,91 +7,36 @@
 [submodule "src/MDD4All.Jira.DataModels"]
 	path = src/MDD4All.Jira.DataModels
 	url = https://github.com/oalt/MDD4All.Jira.DataModels.git
-[submodule "src/SvgGeneration"]
-	path = src/SvgGeneration
-	url = https://github.com/oalt/fmc4seSvgGenerator.git
 [submodule "src/MDD4All.SpecIF.DataFactory"]
 	path = src/MDD4All.SpecIF.DataFactory
 	url = https://github.com/oalt/MDD4All.SpecIF.DataFactory.git
 [submodule "src/MDD4All.SpecIF.DataProvider.Contracts"]
 	path = src/MDD4All.SpecIF.DataProvider.Contracts
 	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.Contracts.git
-[submodule "src/MDD4All.SpecIF.DataModels.RightsManagement"]
-	path = src/MDD4All.SpecIF.DataModels.RightsManagement
-	url = https://github.com/oalt/MDD4All.SpecIF.DataModels.RightsManagement.git
-[submodule "src/MDD4All.SpecIF.DataModels.DiagramInterchange"]
-	path = src/MDD4All.SpecIF.DataModels.DiagramInterchange
-	url = https://github.com/oalt/MDD4All.SpecIF.DataModels.DiagramInterchange.git
-[submodule "src/MDD4All.SVG.DataModels"]
-	path = src/MDD4All.SVG.DataModels
-	url = https://github.com/oalt/MDD4All.SVG.DataModels.git
-[submodule "src/MDD4All.SpecIF.DataModels.Manipulation"]
-	path = src/MDD4All.SpecIF.DataModels.Manipulation
-	url = https://github.com/oalt/MDD4All.SpecIF.DataModels.Manipulation.git
-[submodule "src/MDD4All.SpecIF.DataProvider.File"]
-	path = src/MDD4All.SpecIF.DataProvider.File
-	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.File.git
-[submodule "src/MDD4All.SpecIF.Generators.Vocabulary"]
-	path = src/MDD4All.SpecIF.Generators.Vocabulary
-	url = https://github.com/oalt/MDD4All.SpecIF.Generators.Vocabulary.git
-[submodule "src/MDD4All.SpecIF.DataProvider.MongoDB"]
-	path = src/MDD4All.SpecIF.DataProvider.MongoDB
-	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.MongoDB.git
 [submodule "src/MDD4All.SpecIF.DataProvider.EA"]
 	path = src/MDD4All.SpecIF.DataProvider.EA
 	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.EA.git
 [submodule "src/MDD4All.SpecIF.DataProvider.Jira"]
 	path = src/MDD4All.SpecIF.DataProvider.Jira
 	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.Jira.git
-[submodule "src/MDD4All.SpecIF.DataAccess.Jira"]
-	path = src/MDD4All.SpecIF.DataAccess.Jira
-	url = https://github.com/oalt/MDD4All.SpecIF.DataAccess.Jira.git
-[submodule "src/MDD4All.SpecIF.DataIntegrator.EA"]
-	path = src/MDD4All.SpecIF.DataIntegrator.EA
-	url = https://github.com/oalt/MDD4All.SpecIF.DataIntegrator.EA.git
 [submodule "src/MDD4All.SpecIF.DataIntegrator.Contracts"]
 	path = src/MDD4All.SpecIF.DataIntegrator.Contracts
 	url = https://github.com/oalt/MDD4All.SpecIF.DataIntegrator.Contracts.git
-[submodule "src/MDD4All.SpecIF.DataProvider.WebAPI"]
-	path = src/MDD4All.SpecIF.DataProvider.WebAPI
-	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.WebAPI.git
-[submodule "src/MDD4All.SpecIF.DataProvider.Integration"]
-	path = src/MDD4All.SpecIF.DataProvider.Integration
-	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.Integration.git
-[submodule "src/MDD4All.SpecIF.ServiceDataProvider"]
-	path = src/MDD4All.SpecIF.ServiceDataProvider
-	url = https://github.com/oalt/MDD4All.SpecIF.ServiceDataProvider.git
-[submodule "src/MDD4All.Kafka.DataAccess"]
-	path = src/MDD4All.Kafka.DataAccess
-	url = https://github.com/oalt/MDD4All.Kafka.DataAccess.git
-[submodule "src/MDD4All.SpecIF.DataIntegrator.KafkaListener"]
-	path = src/MDD4All.SpecIF.DataIntegrator.KafkaListener
-	url = https://github.com/oalt/MDD4All.SpecIF.DataIntegrator.KafkaListener.git
-[submodule "src/MDD4All.SpecIF.ViewModels.SpecIfEvent"]
-	path = src/MDD4All.SpecIF.ViewModels.SpecIfEvent
-	url = https://github.com/oalt/MDD4All.SpecIF.ViewModels.SpecIfEvent.git
-[submodule "src/MDD4All.SpecIF.ViewModels.IntegrationService"]
-	path = src/MDD4All.SpecIF.ViewModels.IntegrationService
-	url = https://github.com/oalt/MDD4All.SpecIF.ViewModels.IntegrationService.git
-[submodule "src/MDD4All.SpecIF.Apps.EaPlugin"]
-	path = src/MDD4All.SpecIF.Apps.EaPlugin
-	url = https://github.com/oalt/MDD4All.SpecIF.Apps.EaPlugin.git
-[submodule "src/MDD4All.SpecIF.Converters"]
-	path = src/MDD4All.SpecIF.Converters
-	url = https://github.com/oalt/MDD4All.SpecIF.Converters.git
-[submodule "src/MDD4All.SpecIF.Apps.MongoDbInitializer"]
-	path = src/MDD4All.SpecIF.Apps.MongoDbInitializer
-	url = https://github.com/oalt/MDD4All.SpecIF.Apps.MongoDbInitializer.git
-[submodule "src/MDD4All.SpecIF.Apps.ServiceStarter"]
-	path = src/MDD4All.SpecIF.Apps.ServiceStarter
-	url = https://github.com/oalt/MDD4All.SpecIF.Apps.ServiceStarter.git
-[submodule "src/MDD4All.SpecIF.Microservice.JiraWebhook"]
-	path = src/MDD4All.SpecIF.Microservice.JiraWebhook
-	url = https://github.com/oalt/MDD4All.SpecIF.Microservice.JiraWebhook.git
+[submodule "src/MDD4All.SpecIF.DataIntegrator.EA"]
+	path = src/MDD4All.SpecIF.DataIntegrator.EA
+	url = https://github.com/oalt/MDD4All.SpecIF.DataIntegrator.EA.git
+[submodule "src/MDD4All.SpecIF.DataModels.Manipulation"]
+	path = src/MDD4All.SpecIF.DataModels.Manipulation
+	url = https://github.com/oalt/MDD4All.SpecIF.DataModels.Manipulation.git
+[submodule "src/fmc4seSvgGenerator"]
+	path = src/fmc4seSvgGenerator
+	url = https://github.com/oalt/fmc4seSvgGenerator.git
+[submodule "src/MDD4All.SpecIF.DataProvider.File"]
+	path = src/MDD4All.SpecIF.DataProvider.File
+	url = https://github.com/oalt/MDD4All.SpecIF.DataProvider.File.git
+[submodule "src/MDD4All.SpecIF.DataAccess.Jira"]
+	path = src/MDD4All.SpecIF.DataAccess.Jira
+	url = https://github.com/oalt/MDD4All.SpecIF.DataAccess.Jira.git
 [submodule "src/MDD4All.Jira.DataAccess"]
 	path = src/MDD4All.Jira.DataAccess
 	url = https://github.com/oalt/MDD4All.Jira.DataAccess.git
-[submodule "src/MDD4All.Excel.DataAccess"]
-	path = src/MDD4All.Excel.DataAccess
-	url = https://github.com/oalt/MDD4All.Excel.DataAccess.git
-	branch = main
