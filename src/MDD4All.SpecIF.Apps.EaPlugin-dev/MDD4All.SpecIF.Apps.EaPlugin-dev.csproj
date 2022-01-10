@@ -214,8 +214,17 @@
     <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\MDD4All_Github.snk">
       <Link>MDD4All_Github.snk</Link>
     </None>
+    <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\_Registry\COM_RegisterAddin.bat">
+      <Link>_Registry\COM_RegisterAddin.bat</Link>
+    </None>
+    <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\_Registry\COM_UnregisterAddin.bat">
+      <Link>_Registry\COM_UnregisterAddin.bat</Link>
+    </None>
     <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\_Registry\RegisterAddin.reg">
       <Link>_Registry\RegisterAddin.reg</Link>
+    </None>
+    <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\_Registry\UnregisterAddin.reg">
+      <Link>_Registry\UnregisterAddin.reg</Link>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
