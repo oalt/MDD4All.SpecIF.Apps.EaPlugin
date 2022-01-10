@@ -88,6 +88,6 @@ jobs:
     - name: Upload artifact(s)
       uses: actions/upload-artifact@v2
       with:
-        name: ${{env.SOLUTION_NAME}}_${{env.VERSION}}.zip
+        name: ${{env.SOLUTION_NAME}}_${{env.VERSION}}
         path: ./Output/**/*.*
       
