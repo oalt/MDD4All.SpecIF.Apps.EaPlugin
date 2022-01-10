@@ -42,8 +42,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\MDD4All.SpecIF.Apps.EaPlugin\MDD4All_Github.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
@@ -212,6 +211,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\MDD4All_Github.snk">
+      <Link>MDD4All_Github.snk</Link>
+    </None>
     <None Include="..\MDD4All.SpecIF.Apps.EaPlugin\_Registry\RegisterAddin.reg">
       <Link>_Registry\RegisterAddin.reg</Link>
     </None>
