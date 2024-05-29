@@ -64,18 +64,6 @@
       <HintPath>..\libs\Interop.EA.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="MDD4All.EAFacade.DataAccess.Cached, Version=2.2.1.260, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EAFacade.DataAccess.Cached.2.2.1.260\lib\netstandard2.0\MDD4All.EAFacade.DataAccess.Cached.dll</HintPath>
-    </Reference>
-    <Reference Include="MDD4All.EAFacade.DataModels.Contracts, Version=2.1.1.257, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EAFacade.DataModels.Contracts.2.1.1.257\lib\netstandard2.0\MDD4All.EAFacade.DataModels.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.Logging, Version=2.0.1.3, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.Logging.2.0.1.3\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.Manipulations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MDD4All.EnterpriseArchitect.Manipulations.3.0.3.275\lib\netstandard2.0\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -89,8 +77,8 @@
     <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.705.50, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Microsoft.Web.WebView2.1.0.705.50\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson, Version=2.14.1.0, Culture=neutral, PublicKeyToken=15b1115599983c50, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MongoDB.Bson.signed.2.14.1\lib\net472\MongoDB.Bson.dll</HintPath>
+    <Reference Include="MongoDB.Bson, Version=2.13.2.0, Culture=neutral, PublicKeyToken=15b1115599983c50, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MongoDB.Bson.signed.2.13.2\lib\net452\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -102,9 +90,6 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="ReverseMarkdown, Version=3.19.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\ReverseMarkdown.3.19.0\lib\net46\ReverseMarkdown.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -159,6 +144,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
@@ -236,6 +224,22 @@
     <ProjectReference Include="..\..\..\MDD4All.Configuration\src\MDD4All.Configuration\MDD4All.Configuration-dev.csproj">
       <Project>{effcfae4-3ec0-488a-bb9a-455b65f69b85}</Project>
       <Name>MDD4All.Configuration-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MDD4All.EAFacade.DataAccess.Cached\src\MDD4All.EAFacade.DataAccess.Cached\MDD4All.EAFacade.DataAccess.Cached-dev.csproj">
+      <Project>{7b86bcc3-d14e-43fb-9cb6-c4477ee9ca27}</Project>
+      <Name>MDD4All.EAFacade.DataAccess.Cached-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MDD4All.EAFacade.DataModels.Contracts\src\MDD4All.EAFacade.DataModels.Contracts\MDD4All.EAFacade.DataModels.Contracts-dev.csproj">
+      <Project>{92b0a303-54d0-429f-9feb-5c9527e53d5e}</Project>
+      <Name>MDD4All.EAFacade.DataModels.Contracts-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MDD4All.EnterpriseArchitect.Logging\src\MDD4All.EnterpriseArchitect.Logging\MDD4All.EnterpriseArchitect.Logging-dev.csproj">
+      <Project>{7d0c9f7e-c507-4438-9a45-33c43eb99ef3}</Project>
+      <Name>MDD4All.EnterpriseArchitect.Logging-dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MDD4All.EnterpriseArchitect.Manipulations\src\MDD4All.EA.Manipulations\MDD4All.EnterpriseArchitect.Manipulations-dev.csproj">
+      <Project>{2e504ce9-40d7-46d2-97e7-5942e8711b8a}</Project>
+      <Name>MDD4All.EnterpriseArchitect.Manipulations-dev</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\MDD4All.EnterpriseArchitect.SvgGenerator\src\MDD4All.EnterpriseArchitect.SvgGenerator\MDD4All.EnterpriseArchitect.SvgGenerator-dev.csproj">
       <Project>{0c716bb4-f2ce-43f2-bdfb-38ff185f78bd}</Project>
