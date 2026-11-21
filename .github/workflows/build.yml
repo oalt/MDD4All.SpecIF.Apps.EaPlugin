@@ -5,13 +5,13 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-2019
+    runs-on: windows-latest
     env:
       SOLUTION_NAME: MDD4All.SpecIF.Apps.EaPlugin
 
     steps:
     - name: Checkout repository and submodules
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
       with:
         submodules: recursive
 
@@ -80,7 +80,7 @@ jobs:
         xcopy ".\src\${{env.SOLUTION_NAME}}\bin\Release\*.config" .\Output\
 
     - name: Upload artifact(s)
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ${{env.SOLUTION_NAME}}.${{env.VERSION}}
         path: ./Output/*.*
